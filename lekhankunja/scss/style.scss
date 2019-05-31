@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,700');
+
+/* global vars */
+
+$font: 'Montserrat',
+sans-serif;
+$text-color: #ececec;
+$inverse-text-color: #ececec;
+$body-bg-color: #1f2029;
+$dropdown-bg-color: #252631;
+$dropdown-item-bg-color: #383b4c;
+
+/* reset & base */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $body-bg-color;
+    color: $text-color;
+    font-family: $font;
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container .dropdown1 {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & h1 {
+        font-size: 4rem;
+        font-weight: 100;
+        color: $text-color;
+        text-align: center;
+        margin: 5rem 0 2.5rem 0;
+        width: 100%;
+    }
+    // Dropdown component
+    & .dropdown {
+        position: relative;
+        display: flex;
+        min-width: 22.5rem;
+        flex-direction: column;
+        margin: auto;
+        & a {
+            &.dropdown__link {
+                position: relative;
+                z-index: 999;
+                display: flex;
+                width: 100%;
+                padding: 1rem 5rem 1rem 5rem;
+                font-size: 1.35rem;
+                font-weight: 500;
+                color: $inverse-text-color;
+                text-transform: capitalize;
+                background-color: $dropdown-bg-color;
+                text-decoration: none;
+                border-radius: .5rem;
+                &:hover,
+                &--is-active {
+                    box-shadow: 0 0.5rem 1.5rem -0.5rem rgba(0, 0, 0, .35);
+                }
+                &.dropdown__link--is-active {
+                    & svg {
+                        &.dropdown__icon {
+                            &-arrow-down {
+                                transform: rotate3d(0, 0, 1, -180deg);
+                            }
+                        }
+                    }
+                }
+                &:hover,
+                &:active,
+                &:focus,
+                &:visited,
+                &:focus:active,
+                &:hover:focus {
+                    color: $inverse-text-color;
+                }
+                & svg {
+                    &.dropdown__icon {
+                        position: absolute;
+                        top: 0;
+                        display: flex;
+                        width: 2rem;
+                        height: 100%;
+                        fill: #fff;
+                        pointer-events: none;
+                        &-profile,
+                        &-services,
+                        &-storage,
+                        &-billing,
+                        &-settings,
+                        &-sign-out {
+                            left: 1.5rem;
+                        }
+                        &-arrow-down {
+                            right: 1.5rem;
+                            will-change: transform;
+                            transform-style: preserve-3d;
+                            transform: rotate3d(0, 0, 0, 0);
+                            transition: .25s ease all;
+                        }
+                    }
+                }
+            }
+        }
+        & .dropdown__menu {
+            position: absolute;
+            bottom: 3.5rem;
+            z-index: 99;
+            left: 0;
+            display: flex;
+            width: 100%;
+            background-color: $dropdown-bg-color;
+            border-radius: .5rem;
+            box-shadow: 0 0.5rem 1.5rem -0.5rem rgba(0, 0, 0, .35);
+            opacity: 0;
+            visibility: hidden;
+            transform: translate3d(0, 2.5rem, 0);
+            transform-style: preserve-3d;
+            will-change: transform, opacity, visibility;
+            overflow: hidden;
+            transition: .25s ease all;
+            & .dropdown__content {
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                & ul {
+                    &.dropdown__nav {
+                        display: flex;
+                        width: 100%;
+                        flex-wrap: wrap;
+                        list-style: none;
+                        & li {
+                            &.dropdown__item {
+                                display: flex;
+                                width: 100%;
+                                transition: .35s ease all;
+                                &--is-active,
+                                &:hover {
+                                    background-color: $dropdown-item-bg-color;
+                                }
+                                & a {
+                                    &.dropdown__link {
+                                        padding: 1rem 2rem 1rem 5rem;
+                                        background-color: transparent;
+                                        border-radius: 0;
+                                        box-shadow: none;
+                                        &:hover,
+                                        &:active,
+                                        &:focus,
+                                        &:visited,
+                                        &:focus:active,
+                                        &:hover:focus {
+                                            color: $inverse-text-color;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &--is-active {
+            & .dropdown__menu {
+                opacity: 1;
+                visibility: visible;
+                transform: translate3d(0, -1rem, 0);
+            }
+        }
+    }
+}
