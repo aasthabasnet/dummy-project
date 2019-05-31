@@ -1,0 +1,191 @@
+@charset "utf-8";
+#home
+{
+	background: url(http://kaflesajan.com.np/boot/10/img/bg-masthead.jpg);
+	min-height: 640px;
+	background-size: cover;
+	padding-top: 200px;
+}
+#home h1
+{
+	font-size: 65px;
+	font-weight: bold;
+
+}
+#home p
+{
+	font-size: 22px;
+	font-style: italic;
+	font-weight: bold;
+}
+#home .btn-primary
+{
+	padding: 16px 30px;
+	margin-top: 13px;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #1d809f;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  color: #fff;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #000;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#about
+{
+	padding: 80px 0px;
+
+}
+#about h3
+{
+	font-size:30px;
+	font-weight: bold;
+}
+#about p
+{
+	font-size: 15px;
+}
+#about .btn-primary
+{
+	background-color: #23272b;
+	margin-top: 30px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-right: 30px;
+	padding-left: 30px;
+
+}
+#services
+{
+	background-color: #1d809f;
+	
+	overflow: hidden;
+	padding: 100px 0px;
+	color: #fff;
+
+}
+
+#services small
+{
+	color: #ecb807;
+	font-size: 15px;
+	padding-bottom: -10px;
+}
+#services h1
+{
+	font-size: 40px;
+
+}
+#services .circle
+{
+	width: 110px;
+	height: 110px;
+	background: #fff;
+	border-radius: 50%;
+	margin: auto;
+	margin-top: 50px;
+	
+	}
+
+	#next
+	{
+		background: url(http://kaflesajan.com.np/boot/10/img/bg-callout.jpg);
+		background-size: cover;
+		overflow: hidden;
+		height: 650px;
+	}
+
+	#next p
+	{
+		margin-top: 300px;
+		text-align: center;
+		font-size: 50px;
+	}
+#next .btn-primary
+{
+	margin-left: 610px;
+	margin-top: 10px;
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 20px;
+}
+
+#projects
+{
+padding: 100px 0px;
+}
+#projects .row
+{
+	padding-top: 40px;
+}
+#projects .col-md-6
+{
+padding: 0px;
+
+}
+#services1 
+{
+	background-color: #1d809f;
+	
+	overflow: hidden;
+	padding: 100px 0px;
+	color: #fff;
+}
+#services1 h1
+{
+	font-size: 40px;
+
+} 
+{
+	color: #ecb807;
+	font-size: 15px;
+	padding-bottom: -10px;
+}
+#services1 h1
+{
+	font-size: 35px;
+
+}
+#services1 .btn-light
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padd
+	margin-top: 20px;
+	background-color: #fff;
+	color: #000;
+}
