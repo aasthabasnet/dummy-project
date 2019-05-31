@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>BOB</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style1.css">
+
+
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <div class="logo"><img src="img/logo.png"><button type="button" class="btn btn-primary ">Login</button>
+                <div id="mySidenav" class="sidenav"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
+                </a><a href="#">01 &nbsp;
+                &nbsp;
+                Home</a><a href="#">02 &nbsp;
+                &nbsp;
+                About Us</a><a href="#">03 &nbsp;
+                &nbsp;
+                Event Format</a><a href="#">04 &nbsp;
+                &nbsp;
+                Judge & Host</a><a href="#">05 &nbsp;
+                &nbsp;
+                Schedule</a><a href="#">06 &nbsp;
+                &nbsp;
+                Contact Us</a></div>
+                <!-- Use any element to open the sidenav --><span onclick="openNav()">
+                    <img src="img/menu.png" style="right: 80px !important; top:25px !important; position: absolute; "></span></span>
+            </div>
+            <script>
+                /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "300px";
+                    document.getElementById("main").style.marginLeft = "250px";
+                }
+                /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                    document.getElementById("main").style.marginLeft = "0";
+                }
+            </script>
+            <script>
+                $('.myCarousel').myCarousel({
+                    interval: 1000
+                })
+            </script>
+            <div class="above_about">
+                <a>Home &nbsp;&nbsp; &nbsp;</a><b style="color:#5a7ba4;"> About us</b>
+
+
+            </div>
+            <!-- about us -->
+            <div class="about ">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+                <img src="img/about_bg.png ">
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, dolores itaque officia laboriosam omnis, nisi delectus, totam hic odio harum sit deserunt minima enim aliquam accusamus nulla ea et quisquam ?Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Quas molestiae accusamus labore. Fugiat fuga eius odit consequatur ex inventore consectetur expedita repellendus a, possimus rerum quidem, adipisci officiis ullam Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit. Tempore ipsum dolorum ipsam incidunt ea mollitia vero, neque possimus nihil nemo perferendis non ipsa optio commodi vitae, cumque quia eum ducimus!</p>
+                <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur repellat doloremque dolorem omnis fugit tenetur pariatur error dolore? Itaque iusto ea esse error expedita laboriosam modi dolorum veritatis consequatur Lorem ipsum dolor
+                    sit amet consectetur, adipisicing elit. Est ab debitis beatae voluptas ipsa quo earum, asperiores fugit aut obcaecati placeat quidem perferendis soluta tempora sint, at minus provident. Porro! Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Pariatur perferendis totam voluptatum dignissimos autem quibusdam facilis libero commodi aperiam corporis fugit modi repellendus, a alias aut, labore nostrum? Error, cumque! </p>
+                <div class="footer">
+                    <p>Copyright © 2019. <a href="/">BOB</a> All Rights Reserved | Terms and Conditions<br>Powered By <a href="https://www.thesunbi.com/">SunBi</a>
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- about us ends here -->
+
+        </div>
+        <!-- container ends here -->
+    </div>
+    <!-- wrapper ends here -->
+
+
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js "></script>
+</body>
+
+</html>

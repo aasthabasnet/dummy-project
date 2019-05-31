@@ -1,0 +1,193 @@
+        @charset "utf-8";
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Comic Sans MS", cursive, sans-serif !important;
+        }
+        
+        #wrapper {
+            background-color: #0D2259;
+        }
+        
+        .container {
+            background-image: url(../img/andre-benz-276974-unsplash.png);
+            background-size: cover;
+            overflow: hidden;
+            width: 100%;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+        
+        .logo img {
+            margin-top: 20px;
+            margin-left: 80px;
+        }
+        
+        .logo .btn-primary {
+            color: #fff;
+            margin-top: 30px;
+        }
+        
+        .btn-primary {
+            margin-left: 1080px;
+            color: #a3d0f9;
+            padding: 10px 30px;
+            text-transform: capitalize;
+            font-size: 14px;
+            border: 1px solid #a3d0f9;
+            letter-spacing: 1px;
+            border-radius: 30px;
+            background: transparent;
+            position: absolute;
+            top: 10px;
+            right: 180px;
+            font-family: "Comic Sans MS", cursive, sans-serif !important;
+        }
+        
+        .btn-primary:hover {
+            background-color: #011e64;
+        }
+        
+        #menu {
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+        
+        .image {
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+        /* The side navigation menu */
+        
+        .sidenav {
+            height: 100%;
+            /* 100% Full-height */
+            width: 0;
+            /* 0 width - change this with JavaScript */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1111;
+            /* Stay on top */
+            top: 0;
+            /* Stay at the top */
+            right: 0;
+            background-color: #c10f25;
+            /* Black*/
+            overflow-x: hidden;
+            /* Disable horizontal scroll */
+            padding-top: 60px;
+            /* Place content 60px from the top */
+            transition: 0.5s;
+            /* 0.5 second transition effect to slide in the sidenav */
+        }
+        /* The navigation menu links */
+        
+        .sidenav a {
+            padding: 10px 10px 10px 32px;
+            text-decoration: none;
+            font-size: 15px;
+            color: #fff;
+            display: block;
+            transition: 0.3s;
+            letter-spacing: 2px;
+            margin-top: 20px;
+            margin-left: 30px;
+            font-weight: 10px;
+        }
+        /* When you mouse over the navigation links, change their color */
+        
+        .sidenav a:hover {
+            color: #ff788a;
+            margin-left: 50px;
+        }
+        /* Position and style the close button (top right corner) */
+        
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+            margin-top: 10px;
+        }
+        
+        img {
+            margin-left: 20px;
+        }
+        
+        #main {
+            transition: margin-right .5s;
+            padding: 20px;
+        }
+        
+        .fa-map-marker-alt {
+            margin-left: 10px;
+        }
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+        
+        .about {
+            background-color: #0E286E;
+            padding-top: 10%;
+            width: 80%;
+            padding-bottom: 3px;
+            padding-left: 10%;
+            margin-top: 20%;
+            margin-left: 5%;
+            opacity: 0.7;
+        }
+        
+        .above_about {
+            float: right;
+            margin-right: 8%;
+            margin-top: 18%;
+        }
+        
+        .above_about a {
+            color: #8ab2d6;
+            border-right: 2px solid #6086ab;
+            height: 18px;
+        }
+        
+        .about h2 {
+            color: #8ab2d6;
+            margin-top: -85px;
+            margin-left: -55px;
+        }
+        
+        .about p {
+            color: #94a3cc;
+            font-size: 17px;
+            margin-left: -55px;
+            margin-right: 18px;
+            padding-right: 20px;
+        }
+        
+        .about img {
+            float: left;
+            margin-left: -55px;
+            margin-top: 13px;
+            margin-right: 27px;
+        }
+        
+        .para {
+            color: #000;
+            padding-top: 13px;
+        }
+        
+        .para1 {
+            padding-top: 13px;
+        }
+        
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+        }

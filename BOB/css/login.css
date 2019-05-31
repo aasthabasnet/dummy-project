@@ -1,0 +1,418 @@
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif !important;
+    margin: 0;
+    padding: 0;
+}
+
+#home {
+    background-image: url(../img/bg.jpg);
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.logo {
+    margin-top: 30px;
+    margin-left: 50px;
+    color: #fff;
+    position: fixed;
+}
+
+
+/*login form*/
+
+
+/* Full-width input fields */
+
+input[type=text],
+input[type=password] {
+    width: 90%;
+    padding: 11px 15px;
+    display: inline-block;
+    border: 1px solid #e9eaec;
+    box-sizing: border-box;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+
+/* Set a style for all buttons */
+
+button {
+    background-color: #9adfef;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    border-radius: 20px;
+    margin-left: 4% !important;
+    margin-top: 4% !important;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+/* Extra styles for the cancel button */
+
+.cancelbtn {
+    width: auto;
+    padding: 13px 25px;
+    border: 1px solid #a3d0f9;
+    background: transparent;
+    margin-left: 4%;
+    border-radius: 7px;
+}
+
+.cancelbtn1 {
+    width: auto;
+    padding: 9px 25px;
+    border: 1px solid #a3d0f9;
+    background: transparent;
+    border-radius: 7px;
+    margin-left: -110px;
+}
+
+.menu {
+    float: right;
+    margin-top: 55px;
+    margin-left: 87%;
+    font-size: 15px;
+    position: fixed
+}
+
+
+/* Center the image and position the close button */
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+.imgcontainer h1 {
+    margin-left: -65%;
+    font-family: "Comic Sans MS", cursive, sans-serif !important;
+}
+
+.imgcontainer h3 {
+    margin-left: -31%;
+    color: #b9bdc9;
+    font-family: "Comic Sans MS", cursive, sans-serif !important;
+}
+
+.container {
+    padding: 16px;
+    margin-top: 10px;
+    color: #a0a7b8;
+}
+
+.container b {
+    margin-left: 4%;
+    margin-top: 10px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 10px;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 30%;
+    border-radius: 15px;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button (x) */
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+
+/* Add Zoom Animation */
+
+.w3-content .mySlides {
+    -webkit-animation: animatezoom 0.5s;
+    animation: animatezoom 0.5s;
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(1)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(1)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+
+/* Change styles for span and cancel button on extra small screens */
+
+@media screen and (max-width: 240px) {
+    span.psw {
+        display: block;
+        float: right;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+.btn-primary {
+    float: right;
+    color: #a3d0f9;
+    padding: 10px 30px;
+    text-transform: capitalize;
+    font-size: 14px;
+    border: 1px solid #a3d0f9;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    background: transparent;
+    position: fixed;
+    right: 15%;
+    margin-top: 45px !important;
+}
+
+.btn-primary:hover {
+    background-color: #011e64;
+}
+
+.rememberme {
+    margin-left: 4%;
+}
+
+.container p {
+    margin-left: 4%;
+    margin-top: 5%;
+}
+
+.horizantal {
+    width: 67%;
+    margin-top: -7%;
+    margin-right: 23px;
+    margin: -25px 110px;
+    border-width: 1px !important;
+    border-style: inset !important;
+    color: #fff;
+    text-align: center;
+}
+
+
+/* sidenav bar starts here */
+
+#menu {
+    margin: 40px;
+}
+
+
+/* The side navigation menu */
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1111;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    background-color: #c10f25;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 10px 10px 10px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-right: 30px;
+    font-weight: 10px;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    color: #ff788a;
+    margin-left: 50px;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.sidenav img {
+    margin-top: 60px;
+    float: right;
+}
+
+img {
+    margin-left: 20px;
+}
+
+#main {
+    transition: margin-right .5s;
+    padding: 20px;
+}
+
+.fa-map-marker-alt {
+    margin-left: 10px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-width: 450px) {
+    .sidenav {
+        padding-top: 4px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+    #menu {
+        padding-top: -10%;
+    }
+}
+
+
+/* side navbar ends here */
+
+
+/* carousel */
+
+.mySlides {
+    display: none;
+    margin: 10%;
+    transition: all 4s ease-in-out;
+    transform: scale(1);
+}
+
+.w3-left,
+.w3-right,
+.w3-badge {
+    cursor: pointer;
+}
+
+.w3-badge {
+    height: 9px!important;
+}
+
+.w3-badge,
+.w3-tag {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+
+/* social icon */
+
+#social {
+    color: #fff;
+    bottom: 40%;
+    margin-left: 7%;
+    margin-top: -8%;
+}
+
+#social a {
+    color: #fff;
+    font-size: 17px;
+}
+
+#social a:hover {
+    color: #011d66;
+}
+
+.fa {
+    margin-top: 15px;
+}
+
+
+/* fotter */
+
+#footer {
+    color: #fff;
+    text-align: center;
+    margin-top: 20%;
+    font-size: 12px;
+}

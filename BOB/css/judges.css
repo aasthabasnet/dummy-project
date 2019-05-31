@@ -1,0 +1,341 @@
+@charset "utf-8";
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", cursive, sans-serif !important;
+}
+
+#wrapper {
+    background-color: #0D2259 !important;
+}
+
+.container {
+    background-image: url(../img/andre-benz-276974-unsplash.png);
+    background-size: cover !important;
+    overflow: hidden;
+    width: 100% !important;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.logo img {
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.logo .btn-primary {
+    color: #fff;
+    margin-top: 30px;
+}
+
+.btn-primary {
+    margin-left: 1080px;
+    color: #a3d0f9;
+    padding: 10px 30px !important;
+    text-transform: capitalize;
+    font-size: 14px;
+    border: 1px solid #a3d0f9 !important;
+    letter-spacing: 1px;
+    border-radius: 30px !important;
+    background: transparent !important;
+    position: absolute;
+    top: 10px;
+    right: 180px;
+    font-family: "Comic Sans MS", cursive, sans-serif !important;
+}
+
+.btn-primary:hover {
+    background-color: #011e64;
+}
+
+#menu {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.image {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+
+/* The side navigation menu */
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1111;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    background-color: #c10f25;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 10px 10px 10px 32px;
+    text-decoration: none !important;
+    font-size: 15px;
+    color: #fff;
+    display: block !important;
+    transition: 0.3s;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-weight: 10px;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    color: #ff788a;
+    margin-left: 50px;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+    position: absolute !important;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+img {
+    margin-left: 20px;
+}
+
+#main {
+    transition: margin-right .5s;
+    padding: 20px;
+}
+
+.fa-map-marker-alt {
+    margin-left: 10px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.about {
+    background-color: #0E286E;
+    padding-top: 10% !important;
+    width: 80% !important;
+    padding-bottom: 3px;
+    padding-left: 10% !important;
+    margin-top: 20% !important;
+    margin-left: 5% !important;
+    opacity: 0.8;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}
+/* responsive design */
+@media (max-width: 500px) {
+    .about .img1{
+      margin-left:-70%;
+      margin-top:30%;
+      
+    }
+    .about .img2{
+        margin-left:-170%;
+        margin-top:260%;
+    }
+    .about .img3{
+        margin-left:30%;
+        margin-top:10% !important;
+    }
+    .host img{
+        margin-top:10%;
+        
+    }
+    .host h3{
+        margin-top:240% !important;
+        
+    }
+    .describe{
+        margin-top:10% !important;
+        margin-left:-110% !important;
+        width:370px !important;
+    }
+    .overlay{
+        margin-top:-32.5%;
+        margin-left:10.5%;
+    }
+    .overlay1{
+        margin-top:23%;
+        margin-left:-13.5%;
+    }
+    .overlay2{
+        margin-top:77%;
+        margin-left:-37.5%;
+    }
+    
+}
+
+.above_about a {
+    color: #8ab2d6;
+    border-right: 2px solid #6086ab;
+    height: 18px;
+    margin-left: 30%;
+}
+
+.above_about p {
+    font-size: 32px;
+    margin-top: -40%;
+    color: #9fddf4;
+    margin-left: -210%;
+}
+
+.about p {
+    color: #94a3cc;
+    font-size: 17px;
+    margin-left: -55px;
+    margin-right: 18px;
+    padding-right: 20px;
+}
+
+.about h3 {
+    margin-top: -15%;
+    margin-left: 6%;
+    color: #9fddf4 !important;
+}
+
+.about .img3 {
+    margin-top: -70%;
+}
+
+.overlay {
+    position: absolute;
+    top: 82.4%;
+    bottom: 0;
+    left: 16.6%;
+    right: 0;
+    height: 226px;
+    width: 223px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+    cursor: pointer;
+}
+
+.overlay:hover {
+    opacity: 0.7;
+}
+
+.text {
+    color: white;
+    font-size: 16.5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.overlay1 {
+    position: absolute;
+    top: 82.4%;
+    bottom: 0;
+    left: 40.6%;
+    right: 0;
+    height: 226px;
+    width: 223px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+    cursor: pointer;
+}
+
+.overlay1:hover {
+    opacity: 0.7;
+}
+
+.text1 {
+    color: whitesmoke;
+    font-size: 16.5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.overlay2 {
+    position: absolute;
+    top: 82.4%;
+    bottom: 0;
+    left: 64.6%;
+    right: 0;
+    height: 226px;
+    width: 223px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+    cursor: pointer;
+}
+
+.overlay2:hover {
+    opacity: 0.7;
+}
+
+.text2 {
+    color: white;
+    font-size: 16.5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.host h3 {
+    margin-top: 5%;
+    margin-left: -94.7%;
+    color: #9fddf4 !important;
+}
+
+.host img {
+    width: 310px;
+    margin-left: -95%;
+}
+
+.describe {
+    margin-top: -89%;
+    width: 500px;
+    height  : 310px;
+    margin-left :30%;
+    color: #9fddf4;
+}
+#footer {
+    color: #fff;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 12px;
+}

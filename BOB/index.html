@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <title>BOB</title>
+
+    <link rel="icon" href="img/logo.png">
+</head>
+
+<body>
+    <section id="home">
+        <div class="logo"><img src="img/logo.png"></div>
+
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn btn-primary">Login</button>
+        <!-- sidenavbar starts here -->
+        <div id="mySidenav" class="sidenav"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
+                </a><a href="#">01 &nbsp;
+                &nbsp;
+                Home</a><a href="about.html">02 &nbsp;
+                &nbsp;
+                About Us</a><a href="#">03 &nbsp;
+                &nbsp;
+                Event Format</a><a href="judges & host">04 &nbsp;
+                &nbsp;
+                Judge & Host</a><a href="#">05 &nbsp;
+                &nbsp;
+                Schedule</a><a href="#">06 &nbsp;
+                &nbsp;
+                Contact Us</a></div>
+
+
+
+
+        <!-- Use any element to open the sidenav --><span onclick="openNav()"><a class="menu"style="color:#fff">Menu<img src="img/menu.png" style="float:right; margin-top: 4.5px; margin-right: 80px;cursor: pointer;"></a></span></div>
+        <script>
+            /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "300px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+            /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+        </script>
+        <script>
+            $('.myCarousel').myCarousel({
+                interval: 1000
+            })
+        </script>
+        <!-- side nabvar ends here -->
+        </div>
+        <!-- login form starts here -->
+        <div id="id01" class="modal">
+
+            <form class="modal-content animate">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <h1>Login</h1>
+                    <h3>Battle Of the Bands</h3>
+                </div>
+
+                <div class="container">
+
+                    <label for="uname"><b>Email</b></label>
+                    <input type="text" placeholder="type your email address" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label><br>
+                    <input type="password" placeholder="type password" name="psw" required>
+                    <label>
+                    <input type="checkbox" checked="checked" name="remember" class="rememberme"> Remember me
+                  </label>
+                    <br>
+                    <button type="submit" class="innerBottom">Login</button><br>
+                    <p>Login with</p>
+                    <hr class="horizantal">
+                    <p style="color:#fff !important">s</p>
+
+
+                    <div class="container" style="background-color:#fff; ">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="margin-left:-7px; margin-top: 5px;"><a href="#"><img src="img/facebook.png"></a></button>
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn1" style="margin-left:95px; margin-top: 5px;"><a href="#"><img src="img/google.png"></a></button>
+                        <span class="psw ">Forgot <a href="# ">password?</a></span>
+                    </div>
+
+            </form>
+            </div>
+            <!-- login form ends here -->
+        </div>
+        <!-- carousels starts here -->
+
+
+        <div class="w3-content w3-display-container">
+            <img class="mySlides " src="img/mnemonic (1).png">
+            <img class="mySlides" src="img/our-judges1.png">
+            <img class="mySlides" src="img/host-malvika1.png">
+
+            <div class="myCarousel" style="margin-left: 109%; margin-top: -50%;">
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white " onclick="currentDiv(2) "></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white " onclick="currentDiv(3) "></span>
+            </div>
+        </div>
+        <div id="social">
+
+            <a href=""><i class="fa fa-facebook"></i></a><br>
+            <a href=""><i class="fa fa-instagram"></i></a><br>
+
+            <a href=""><i class="fa fa-youtube"></i></a>
+        </div>
+        <div id="footer">
+            <p>Copyright © 2019. <a href="/">BOB</a> All Rights Reserved | <a class="term" style="color:#8db1db; font-size:15px;">Terms and Conditions</a><br>Powered By <a href="https://www.thesunbi.com/">SunBi</a>
+            </p>
+        </div>
+
+    </section>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none ";
+            }
+        }
+    </script>
+    <!-- carousel script starts here -->
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides ");
+            var dots = document.getElementsByClassName("demo ");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none ";
+
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-white ", " ");
+            }
+            x[slideIndex - 1].style.display = "block ";
+            dots[slideIndex - 1].className += " w3-white ";
+
+        }
+    </script>
+    <!-- animation of the carousel -->
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides ");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none ";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block ";
+            setTimeout(carousel, 4000); // Change image every 4 seconds
+        }
+    </script>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>
